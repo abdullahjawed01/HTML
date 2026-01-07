@@ -53,12 +53,8 @@ async function saveData(e) {
   try {
     const res = await axios.post(
       "http://localhost:8080/register",
-      { name, email, password },
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
+      { name, email, password }
+      
     );
 
    
